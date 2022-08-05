@@ -8,6 +8,7 @@ Vue.use(VueRouter)
 import Home from './pages/Home.vue';
 import NotFound from './pages/notFound.vue'
 import Shop from './pages/Shop.vue'
+import Product from './pages/Product'
 
 // Routering
 export default new VueRouter({
@@ -22,6 +23,11 @@ export default new VueRouter({
             path: '/shop',
             name: 'shop',
             component: Shop
+        },
+        {
+            path: '/shop/:id',
+            name: 'product',
+            component: Product
         },
         {
             path: '*',
